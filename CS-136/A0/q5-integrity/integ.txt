@@ -1,0 +1,41 @@
+DO NOT ALTER THIS FILE EXCEPT IN THE FOLLOWING FOUR WAYS:
+
+* Replace ERROR_NO_INTEGRITY_STATEMENT with the level of collaboration that
+    you have engaged in for this question
+* Replace ERROR_NO_NAME with your (preferred) name, e.g., "John Doe".
+* Replace ERROR_NO_LOGIN with your Quest user id, e.g., "jdoe136".
+* For each question, replace the X with one of A, B, C, D, E, T, or F.
+
+
+///////////////////////////////////////////////////////////////////////////// 
+// INTEGRITY STATEMENT (v3)
+//
+// By signing your name and ID below you are stating that you have agreed
+// to the online academic integrity statement:
+// https://student.cs.uwaterloo.ca/~cs136/current/assignments/integrity.shtml
+/////////////////////////////////////////////////////////////////////////////
+// I received help from and/or collaborated with: 
+ 
+//  None
+//  
+// Name: Robert Knowles 
+// login ID: r2knowle
+///////////////////////////////////////////////////////////////////////////// 
+
+
+Question 1: D
+Question 2: B
+Question 3: A
+Question 4: E
+Question 5: E
+Question 6: T
+Question 7: T
+Question 8: F
+Question 9: T
+Question 10: T
+Question 11: T
+Question 12: T
+Question 13: D
+Question 14: A
+Question 15: C
+Question 16: B
