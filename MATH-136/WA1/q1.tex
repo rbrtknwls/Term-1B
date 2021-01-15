@@ -1,0 +1,43 @@
+\documentclass[11pt]{article}
+\textwidth 15cm 
+\textheight 21.3cm
+\evensidemargin 6mm
+\oddsidemargin 6mm
+\topmargin -1.1cm
+\setlength{\parskip}{1.5ex}
+
+
+\usepackage{amsfonts,amsmath,amssymb,enumerate}
+
+
+
+\begin{document}
+\textbf{Question 1} [15 marks] \\\\
+a) We will start by assuming that $u \bullet v = 0$, it thus follows that:
+\begin{align*}
+(u \bullet v)  &= 0 \\
+(u \bullet v)  + (u \bullet v) &= 0 + 0\\
+(u \bullet v) + (v \bullet u) &= 0\\
+\end{align*}
+We will now add ($u \bullet u$) and ($v \bullet v$) to both sides:
+\begin{align*}
+(u \bullet u) + (u \bullet v)  + (v \bullet u) + (v \bullet v)  &=(u \bullet u) + 0 + (v \bullet v)\\
+(u \bullet u) + (u \bullet v)  + (v \bullet u) + (v \bullet v)  &=(u \bullet u) + (v \bullet v)
+\end{align*}
+We know from the propities of the dot product that $u\bullet u = ||u||^2$, so our equation becomes:
+\begin{align*}
+(u \bullet u) + (u \bullet v)  + (v \bullet u) + (v \bullet v)  &=||u||^2 + (v \bullet v)\\
+(u \bullet u) + (u \bullet v)  + (v \bullet u) + (v \bullet v)  &=||u||^2 + ||v||^2
+\end{align*}
+We know from the propities of the dot product that $(u \bullet v) + (u \bullet u) = u \bullet (u\bullet v)$, so we will distrabute out $u$ and then $v$ to get:
+\begin{align*}
+u \bullet (u \bullet v)  + (v \bullet u) + (v \bullet v)  &=||u||^2 + ||v||^2\\
+u \bullet (u \bullet v) +  v \bullet (u \bullet v) &=||u||^2 + ||v||^2\\
+\end{align*}
+As well since $(u + v) \bullet (u + v)  = u \bullet (u \bullet v) +  v \bullet (u \bullet v)$, it implies that our equation will become:
+\begin{align*}
+(u + v) \bullet (u + v) &=||u||^2 + ||v||^2
+||u + v||^2 &=||u||^2 + ||v||^2
+\end{align*}
+
+\end{document}
