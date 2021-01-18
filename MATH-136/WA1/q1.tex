@@ -13,31 +13,42 @@
 
 \begin{document}
 \textbf{Question 1} [15 marks] \\\\
-a) We will start by assuming that $u \bullet v = 0$, it thus follows that:
+a) We will start by assuming that $(u \bullet v) = 0$, it thus follows that:
 \begin{align*}
 (u \bullet v)  &= 0 \\
 (u \bullet v)  + (u \bullet v) &= 0 + 0\\
-(u \bullet v) + (v \bullet u) &= 0\\
+(u \bullet v) + (v \bullet u) &= 0
 \end{align*}
 We will now add ($u \bullet u$) and ($v \bullet v$) to both sides:
 \begin{align*}
 (u \bullet u) + (u \bullet v)  + (v \bullet u) + (v \bullet v)  &=(u \bullet u) + 0 + (v \bullet v)\\
 (u \bullet u) + (u \bullet v)  + (v \bullet u) + (v \bullet v)  &=(u \bullet u) + (v \bullet v)
 \end{align*}
-We know from the propities of the dot product that $u\bullet u = ||u||^2$, so our equation becomes:
+We know from the properties of the dot product that $(u\bullet u) = ||u||^2$, so our equation becomes:
 \begin{align*}
 (u \bullet u) + (u \bullet v)  + (v \bullet u) + (v \bullet v)  &=||u||^2 + (v \bullet v)\\
 (u \bullet u) + (u \bullet v)  + (v \bullet u) + (v \bullet v)  &=||u||^2 + ||v||^2
 \end{align*}
-We know from the propities of the dot product that $(u \bullet v) + (u \bullet u) = u \bullet (u\bullet v)$, so we will distrabute out $u$ and then $v$ to get:
+We know from the proprieties of the dot product that $(u \bullet v) + (u \bullet u) = u \bullet (u+ v)$, so we will distrabute out $u$ and then $v$ to get:
 \begin{align*}
 u \bullet (u \bullet v)  + (v \bullet u) + (v \bullet v)  &=||u||^2 + ||v||^2\\
-u \bullet (u \bullet v) +  v \bullet (u \bullet v) &=||u||^2 + ||v||^2\\
+u \bullet (u + v) +  v \bullet (u + v) &=||u||^2 + ||v||^2
 \end{align*}
-As well since $(u + v) \bullet (u + v)  = u \bullet (u \bullet v) +  v \bullet (u \bullet v)$, it implies that our equation will become:
+As well since $(u + v) \bullet (u + v)  = u \bullet (u + v) +  v \bullet (u + v)$, it implies that our equation will become:
 \begin{align*}
-(u + v) \bullet (u + v) &=||u||^2 + ||v||^2
+(u + v) \bullet (u + v) &=||u||^2 + ||v||^2 \\
 ||u + v||^2 &=||u||^2 + ||v||^2
+\end{align*}\\\\
+b) The converse of this statement would be:
+\[ \text{if } ||u + v||^2 = ||u||^2 + ||v||^2 \text{ then } (u \bullet v) = 0 \]\\\\
+c) To start we know that with three vectors $u, v, w$ the equation would become:
+\[ \text{if } u \bullet v \bullet w = 0 \text{ then } ||u + v + w|| = ||u||^2 + ||v||^2 + ||w||^2 \]
+It thus follows that:
+\begin{align*}
+(u \bullet v \bullet w)  &= 0 \\
+(u \bullet v \bullet w) + (u \bullet v \bullet w) +(u \bullet v \bullet w)  &= 0 + 0 + 0 \\
+(u \bullet (v \bullet w)) + (w \bullet (u \bullet v)) +(v \bullet (u \bullet w))  &= 0 \\
+(u \bullet v) + (v \bullet w)+ (w \bullet u) + (w \bullet v) + (v \bullet u) + (v \bullet w)  &= 0 
 \end{align*}
-
+By the dot product's property of symmetry we know that this becomes:
 \end{document}
