@@ -70,5 +70,62 @@ From the properties of dot product we know this can simplify to:
 (u \bullet v) &= 0
 \end{align*}
 Therefore proving that for all vectors $u$, $v$ in  $\mathbb{R}^n$, that if $||u + v||^2 =||u||^2 + ||v||^2$ then $(u \bullet v) = 0$\\\\
-\textbf{d)}
-\end{document}
+\textbf{d)} For vectors $u,v,w \in \mathbb{R}^n$, the statement can be extended to:
+\[ \text{if } (u \bullet v) = 0, (u \bullet w) = 0 \text{ and } (v \bullet w) \text{ then } || u + v + w ||^2 = ||u||^2 + ||v||^2 + ||w||^2\]
+If we assume the hypothesis is correct we get the equation we get (and it thus follows that):
+\begin{align*}
+(u \bullet v)  + (w \bullet u) + (v \bullet w) &= 0 + 0 + 0\\
+(u \bullet v)  + (w \bullet u) + (v \bullet w)  &= 0 \\
+2(u \bullet v)  + 2(w \bullet u) + 2(v \bullet w)  &= 0
+\end{align*}
+If we then add ($u \bullet u$), ($v \bullet v$) and ($w \bullet w$) to both sides and apply the definition of length of a vector we thus get:
+\begin{align*}
+2(u \bullet v)  + 2(w \bullet u) + 2(v \bullet w) + (u \bullet u) + (v \bullet v) + (w \bullet w) &= 0 + (u \bullet u) + (v \bullet v) + (w \bullet w)\\
+2(u \bullet v)  + 2(w \bullet u) + 2(v \bullet w) + (u \bullet u) + (v \bullet v) + (w \bullet w) &= ||u||^2 + (v \bullet v) + (w \bullet w)\\
+2(u \bullet v)  + 2(w \bullet u) + 2(v \bullet w) + (u \bullet u) + (v \bullet v) + (w \bullet w) &= ||u||^2 + ||v||^2 + (w \bullet w)\\
+2(u \bullet v)  + 2(w \bullet u) + 2(v \bullet w) + (u \bullet u) + (v \bullet v) + (w \bullet w) &= ||u||^2 + ||v||^2 + ||w||^2\\
+\end{align*}
+From the definition we know that $(u \bullet v) + (u \bullet u) + (u \bullet w)  = u \bullet ( u+ v + w)$, so by arragning we get that:
+\begin{align*}
+u \bullet (u+v +w)  + (u \bullet v)  + (w \bullet u) + 2(v \bullet w) + (v \bullet v) + (w \bullet w) &= ||u||^2 + ||v||^2 + ||w||^2\\
+u \bullet (u+v +w)  + v \bullet(v + u + w)  + (w \bullet u) + (v \bullet w) + (w \bullet w) &= ||u||^2 + ||v||^2 + ||w||^2\\
+u \bullet (u+v +w)  + v \bullet(u + v + w)  + w \bullet (u + v + w)  &= ||u||^2 + ||v||^2 + ||w||^2\\
+\end{align*}
+We know that $(u+v+w) \bullet (u + v + w) = u \bullet (u+v +w)  + v \bullet(u + v + w)  + w \bullet (u + v + w)$ and by the definition of length this becomes:
+\begin{align*}
+u \bullet (u+v +w)  + v \bullet(u + v + w)  + w \bullet (u + v + w)  &= ||u||^2 + ||v||^2 + ||w||^2\\
+(u+v+w) \bullet (u+v +w)   &= ||u||^2 + ||v||^2 + ||w||^2\\
+||u+v +w||^2   &= ||u||^2 + ||v||^2 + ||w||^2
+\end{align*}
+This thus proves for all vectors $u,v,w \in \mathbb{R}^n$ if $(u \bullet v) = 0, (u \bullet w) = 0 \text{ and } (v \bullet w)$, then:
+\[||u+v +w||^2   = ||u||^2 + ||v||^2 + ||w||^2\]\\\\
+\textbf{e)} The exsention to b) for vectors $u,v,w$ in $\mathbb{R}^2$ can be written as:
+\[ \text{if } ||u + v + w||^2 = ||u||^2 + ||v||^2 + ||w||^2 \text{ then } (u \bullet v) = 0, (y \bullet w) = 0 \text{ and } (y \bullet w) = 0 \]\\\\
+\text{f)} For the counter example let the following vectors (in $\mathbb{R}^3$) equal:
+\begin{equation*}
+u = 
+\begin{pmatrix}
+-1/2 \\
+-2\\
+-2
+\end{pmatrix}
+\text{  }v =
+\begin{pmatrix}
+-1 \\
+-1\\
+-1
+\end{pmatrix}
+\text{  } w =
+\begin{pmatrix}
+1 \\
+1\\
+1
+\end{pmatrix}
+\end{equation*}
+To start we will check if the hypothesis holds, thus we will check if:
+\begin{align*}
+||u+v +w||^2   &= ||u||^2 + ||v||^2 + ||w||^2 \\
+||u+v +w||^2 &=  (u \bullet u) + (v \bullet v) + (w \bullet w)\\
+(u+v+w) \bullet (u+v +w) &=  (u \bullet u) + (v \bullet v) + (w \bullet w)\\
+\end{align*}
+\end{document} 
