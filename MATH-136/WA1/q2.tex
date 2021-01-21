@@ -53,12 +53,12 @@ f(x_1 + x_2)  &= f(x_1) + f(x_2)\\
 \end{align*}
 Thus showing that the first property holds for any $x_1$ and $x_2$. To check for the second property let $x_3, c \in \mathbb{R}$, such that:
 \begin{align*}
-f(c*x_3)  &= c*f(x_3)\\
-2(c*x_3)  &= c*2(x_3)\\
-c(2*x_3)  &= c(2*x_3)
+f(c \times x_3)  &= c \times f(x_3)\\
+2(c \times x_3)  &= c\times2(x_3)\\
+c(2 \times x_3)  &= c(2\times x_3)
 \end{align*}
 Since both properties holds for any $x_1, x_2, x_3, c \in \mathbb{R}$, f(x) = 2x is proven to be linear.\\\\
-\textbf{E)} To start we will use the hypothesis to prove that F(0) = 0, assuming the hypothesis we know that:
+\textbf{e)} To start we will use the hypothesis to prove that F(0) = 0, assuming the hypothesis we know that:
 \[ \forall y_1,y_2 \text{ and }d \in \mathbb{R}, F(dy_1 + y_2) = dF(y_1) + F(y_2) \]
 To prove the first hypothesis we let d = 1, therefore we get that for every $y_1, y_2 \in \mathbb{R}$:
 \begin{align*}
@@ -83,13 +83,58 @@ If we plug this onto our previous equation for property 2 we get that:
 \begin{align*}
 F(dy_1) &= dF(y_1) + F(0)\\
 F(dy_1) &= dF(y_1) + 0\\
-dF(y_1) &= dF(y_1)
+F(dy_1) &= dF(y_1)
 \end{align*}
-Thus proving the second property for any $y_1 \text{and} d \in \mathbb{R}$. Since both properties hold, we have shown that F is linear, that is to say that:
+Thus proving the second property for any $y_1 \text{ and } d \in \mathbb{R}$. Since both properties hold, we have shown that F is linear, that is to say that:
 \begin{align*}
 F(0) &= F((0)(0))\\
        &= (0)F(0))\\
        &= (0)
+\end{align*}\\\\
+\textbf{f)} In order to prove the if and only if we will start by proving:
+\[ \text{if G is linear } \implies \forall y_1,y_2 \text{ and }d \in \mathbb{R}, G(dy_1 + y_2) = dG(y_1) + G(y_2) \]
+If we assume the hypothesis then we know from property 1 that ($\forall y_1, y_2 \in \mathbb{R}$): 
+\begin{align*}
+G(y_1 + y_2) &= G(y_1) + G(y_2)
 \end{align*}
-\\\\
+If we let $y_1 = d \times y_3$, where $\forall d, y_3 \in \mathbb{R}$, we get:
+\begin{align*}
+G(y_1 + y_2) &= G(y_1) + G(y_2)\\
+G(d y_3 + y_2) &= G(d y_3) + G(y_2)
+\end{align*}
+Since G is linear we can thus apply the second property: 
+\begin{align*}
+G(d y_3 + y_2) &= G(d y_3) + G(y_2)\\
+G(d y_3 + y_2) &= dG(y_3) + G(y_2)
+\end{align*}
+Thus proving that if G is linear that for all $y_2,y_3$ and $d \in \mathbb{R}$ that $G(d y_3 + y_2) = dG(y_3) + G(y_2)$. \\
+Next we need to prove the reverse direction or:
+\[  \forall y_1,y_2 \text{ and }d \in \mathbb{R}, G(dy_1 + y_2) = dG(y_1) + G(y_2) \implies \text{if G is linear } \]
+To prove this we will show that we can derivive both properties from the hypothesis, starting with property 1. To prove the first hypothesis we let d = 1, therefore we get that for every $y_1, y_2 \in \mathbb{R}$:
+\begin{align*}
+G(dy_1 + y_2) &= dG(y_1) + G(y_2)\\
+G((1)y_1 + y_2) &= (1)G(y_1) + G(y_2)\\
+G(y_1 + y_2) &= G(y_1) + G(y_2)
+\end{align*}
+Thus showing that the first property holds in G for any $y_1$ and $y_2$. To check for the second property let $y_2 = 0$ such that for every $y_1, d \in \mathbb{R}$, such that:
+\begin{align*}
+G(dy_1 + y_2) &= dG(y_1) + G(y_2)\\
+G(dy_1 + 0) &= dG(y_1) + G(0)\\
+G(dy_1) &= dG(y_1) + G(0)
+\end{align*}
+Note that since we have proven the first hypothesis, we can use it to expand the $F(dy_1)$, we thus get $y_1$ repeated d times:
+\begin{align*}
+G(y_1 + y_1 + \cdots + y_1) &= dG(y_1) + G(0)\\
+G(y_1) + G(y_1) + \cdots + F(y_1) &= dG(y_1) + G(0)\\
+dG(y_1) &= dG(y_1) + G(0)\\
+G(0) &= 0
+\end{align*}
+If we plug this onto our previous equation for property 2 we get that:
+\begin{align*}
+G(dy_1) &= dG(y_1) + F(0)\\
+G(dy_1) &= dG(y_1) + 0\\
+G(dy_1) &= dG(y_1)
+\end{align*}
+Thus proving the second property for any $y_1 \text{ and } d \in \mathbb{R}$.\\
+$\therefore$ Since both propertys are proved G is linear. Therfore we have shown both directions are true and proved the if and only if statement.
 \end{document} 
