@@ -13,7 +13,7 @@
 
 \begin{document}
 \textbf{Question 1} [15 marks] \\\\
-a) We will start by assuming that $(u \bullet v) = 0$, it thus follows that:
+\textbf{a)} Let u and v be vectors in $\mathbb{R}^n$, we will start by assuming that $(u \bullet v) = 0$, it thus follows that:
 \begin{align*}
 (u \bullet v)  &= 0 \\
 (u \bullet v)  + (u \bullet v) &= 0 + 0\\
@@ -39,16 +39,36 @@ As well since $(u + v) \bullet (u + v)  = u \bullet (u + v) +  v \bullet (u + v)
 (u + v) \bullet (u + v) &=||u||^2 + ||v||^2 \\
 ||u + v||^2 &=||u||^2 + ||v||^2
 \end{align*}\\\\
-b) The converse of this statement would be:
+\textbf{b)} The converse of this statement would be (for vectors u and v in $\mathbb{R}^n$)
 \[ \text{if } ||u + v||^2 = ||u||^2 + ||v||^2 \text{ then } (u \bullet v) = 0 \]\\\\
-c) To start we know that with three vectors $u, v, w$ the equation would become:
-\[ \text{if } u \bullet v \bullet w = 0 \text{ then } ||u + v + w|| = ||u||^2 + ||v||^2 + ||w||^2 \]
-It thus follows that:
+\textbf{c)} To start we will assume the hypothesis (for vectors u and v in $\mathbb{R}^n$):
+\[ \text{let } ||u+v||^2 = ||u||^2 + ||v||^2 \]
+By the definition of length for a vector, it imples that the equation becomes: 
 \begin{align*}
-(u \bullet v \bullet w)  &= 0 \\
-(u \bullet v \bullet w) + (u \bullet v \bullet w) +(u \bullet v \bullet w)  &= 0 + 0 + 0 \\
-(u \bullet (v \bullet w)) + (w \bullet (u \bullet v)) +(v \bullet (u \bullet w))  &= 0 \\
-(u \bullet v) + (v \bullet w)+ (w \bullet u) + (w \bullet v) + (v \bullet u) + (v \bullet w)  &= 0 
+||u + v||^2 &=||u||^2 + ||v||^2 \\
+(\sqrt{(u + v) \bullet (u + v)})^2 &= (\sqrt{(u \bullet u)})^2 + (\sqrt{(v \bullet v)})^2 \\
+(u + v) \bullet (u + v) &= (\sqrt{(u \bullet u)})^2 + (\sqrt{(v \bullet v)})^2 \\
+(u + v) \bullet (u + v) &= (u \bullet u) + (v \bullet v) 
 \end{align*}
-By the dot product's property of symmetry we know that this becomes:
+We know by definition that $(u + v) \bullet (u + v)  = u \bullet (u + v) +  v \bullet (u + v)$, thus:
+\begin{align*}
+(u + v) \bullet (u + v) &= (u \bullet u) + (v \bullet v) \\
+u \bullet (u + v) +  v \bullet (u + v)   &= (u \bullet u) + (v \bullet v)  
+\end{align*}
+Futhermore we know that $(u \bullet v) + (u \bullet u) = u \bullet (u+ v)$, which thus implies:
+\begin{align*}
+u \bullet (u + v) +  v \bullet (u + v)   &= (u \bullet u) + (v \bullet v) \\
+(u \bullet u) + (u \bullet v)  + (v \bullet u) + (v \bullet v)   &= (u \bullet u) + (v \bullet v) \\
+(u \bullet v)  + (v \bullet u) &= (u \bullet u) + (v \bullet v) -   (v \bullet v)  - (u \bullet u)\\
+(u \bullet v)  + (v \bullet u) &= 0
+\end{align*}
+From the properties of dot product we know this can simplify to:
+\begin{align*}
+(u \bullet v)  + (v \bullet u) &= 0\\
+(u \bullet v)  + (u \bullet v) &= 0\\
+2(u \bullet v) &= 0\\
+(u \bullet v) &= 0
+\end{align*}
+Therefore proving that for all vectors $u$, $v$ in  $\mathbb{R}^n$, that if $||u + v||^2 =||u||^2 + ||v||^2$ then $(u \bullet v) = 0$\\\\
+\textbf{d)}
 \end{document}
