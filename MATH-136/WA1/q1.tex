@@ -29,7 +29,7 @@ We know from the properties of the dot product that $(u\bullet u) = ||u||^2$, so
 (u \bullet u) + (u \bullet v)  + (v \bullet u) + (v \bullet v)  &=||u||^2 + (v \bullet v)\\
 (u \bullet u) + (u \bullet v)  + (v \bullet u) + (v \bullet v)  &=||u||^2 + ||v||^2
 \end{align*}
-We know from the proprieties of the dot product that $(u \bullet v) + (u \bullet u) = u \bullet (u+ v)$, so we will distrabute out $u$ and then $v$ to get:
+We know from the proprieties of the dot product that $(u \bullet v) + (u \bullet u) = u \bullet (u+ v)$, so we will distribute out $u$ and then $v$ to get:
 \begin{align*}
 u \bullet (u \bullet v)  + (v \bullet u) + (v \bullet v)  &=||u||^2 + ||v||^2\\
 u \bullet (u + v) +  v \bullet (u + v) &=||u||^2 + ||v||^2
@@ -43,7 +43,7 @@ As well since $(u + v) \bullet (u + v)  = u \bullet (u + v) +  v \bullet (u + v)
 \[ \text{if } ||u + v||^2 = ||u||^2 + ||v||^2 \text{ then } (u \bullet v) = 0 \]\\\\
 \textbf{c)} To start we will assume the hypothesis (for vectors u and v in $\mathbb{R}^n$):
 \[ \text{let } ||u+v||^2 = ||u||^2 + ||v||^2 \]
-By the definition of length for a vector, it imples that the equation becomes: 
+By the definition of length for a vector, it implies that the equation becomes: 
 \begin{align*}
 ||u + v||^2 &=||u||^2 + ||v||^2 \\
 (\sqrt{(u + v) \bullet (u + v)})^2 &= (\sqrt{(u \bullet u)})^2 + (\sqrt{(v \bullet v)})^2 \\
@@ -55,7 +55,7 @@ We know by definition that $(u + v) \bullet (u + v)  = u \bullet (u + v) +  v \b
 (u + v) \bullet (u + v) &= (u \bullet u) + (v \bullet v) \\
 u \bullet (u + v) +  v \bullet (u + v)   &= (u \bullet u) + (v \bullet v)  
 \end{align*}
-Futhermore we know that $(u \bullet v) + (u \bullet u) = u \bullet (u+ v)$, which thus implies:
+Furthermore we know that $(u \bullet v) + (u \bullet u) = u \bullet (u+ v)$, which thus implies:
 \begin{align*}
 u \bullet (u + v) +  v \bullet (u + v)   &= (u \bullet u) + (v \bullet v) \\
 (u \bullet u) + (u \bullet v)  + (v \bullet u) + (v \bullet v)   &= (u \bullet u) + (v \bullet v) \\
@@ -99,7 +99,7 @@ u \bullet (u+v +w)  + v \bullet(u + v + w)  + w \bullet (u + v + w)  &= ||u||^2 
 \end{align*}
 This thus proves for all vectors $u,v,w \in \mathbb{R}^n$ if $(u \bullet v) = 0, (u \bullet w) = 0 \text{ and } (v \bullet w)$, then:
 \[||u+v +w||^2   = ||u||^2 + ||v||^2 + ||w||^2\]\\\\
-\textbf{e)} The exsention to b) for vectors $u,v,w$ in $\mathbb{R}^2$ can be written as:
+\textbf{e)} The extension to b) for vectors $u,v,w$ in $\mathbb{R}^2$ can be written as:
 \[ \text{if } ||u + v + w||^2 = ||u||^2 + ||v||^2 + ||w||^2 \text{ then } (u \bullet v) = 0, (y \bullet w) = 0 \text{ and } (y \bullet w) = 0 \]\\\\
 \text{f)} For the counter example let the following vectors (in $\mathbb{R}^3$) equal:
 \begin{equation*}
@@ -117,7 +117,7 @@ u =
 \end{pmatrix}
 \text{  } w =
 \begin{pmatrix}
-1 \\
+-1 \\
 1\\
 1
 \end{pmatrix}
@@ -128,4 +128,207 @@ To start we will check if the hypothesis holds, thus we will check if:
 ||u+v +w||^2 &=  (u \bullet u) + (v \bullet v) + (w \bullet w)\\
 (u+v+w) \bullet (u+v +w) &=  (u \bullet u) + (v \bullet v) + (w \bullet w)\\
 \end{align*}
+Plugging our values our equation becomes:
+\begin{equation*}
+\begin{pmatrix}
+-1/2 + -1 - 1\\
+-2 -1 + 1\\
+-2 -1 + 1
+\end{pmatrix}
+\bullet
+\begin{pmatrix}
+-1/2 -1 - 1\\
+-2 -1 + 1\\
+-2 -1 + 1
+\end{pmatrix}
+=
+\begin{pmatrix}
+-1/2 \\
+-2\\
+-2
+\end{pmatrix}
+\bullet
+\begin{pmatrix}
+-1/2 \\
+-2\\
+-2
+\end{pmatrix}
++
+\begin{pmatrix}
+-1 \\
+-1\\
+-1
+\end{pmatrix}
+\bullet
+\begin{pmatrix}
+-1 \\
+-1\\
+-1
+\end{pmatrix}
++
+\begin{pmatrix}
+-1 \\
+1\\
+1
+\end{pmatrix}
+\bullet
+\begin{pmatrix}
+-1 \\
+1\\
+1
+\end{pmatrix}
+\end{equation*}
+\begin{equation*}
+\begin{pmatrix}
+-5/2\\
+-2\\
+-2
+\end{pmatrix}
+\bullet
+\begin{pmatrix}
+-5/2\\
+-2\\
+-2
+\end{pmatrix}
+=
+\begin{pmatrix}
+-1/2 \\
+-2\\
+-2
+\end{pmatrix}
+\bullet
+\begin{pmatrix}
+-1/2 \\
+-2\\
+-2
+\end{pmatrix}
++
+\begin{pmatrix}
+-1 \\
+-1\\
+-1
+\end{pmatrix}
+\bullet
+\begin{pmatrix}
+-1 \\
+-1\\
+-1
+\end{pmatrix}
++
+\begin{pmatrix}
+-1 \\
+1\\
+1
+\end{pmatrix}
+\bullet
+\begin{pmatrix}
+-1 \\
+1\\
+1
+\end{pmatrix}
+\end{equation*}
+\begin{equation*}
+\begin{pmatrix}
+-5/2\\
+-2\\
+-2
+\end{pmatrix}
+\bullet
+\begin{pmatrix}
+-5/2\\
+-2\\
+-2
+\end{pmatrix}
+=
+\begin{pmatrix}
+-1/2 \\
+-2\\
+-2
+\end{pmatrix}
+\bullet
+\begin{pmatrix}
+-1/2 \\
+-2\\
+-2
+\end{pmatrix}
++
+\begin{pmatrix}
+-1 \\
+-1\\
+-1
+\end{pmatrix}
+\bullet
+\begin{pmatrix}
+-1 \\
+-1\\
+-1
+\end{pmatrix}
++ (-1)*(-1) + 1*1 + 1*1
+\end{equation*}
+\begin{equation*}
+\begin{pmatrix}
+-5/2\\
+-2\\
+-2
+\end{pmatrix}
+\bullet
+\begin{pmatrix}
+-5/2\\
+-2\\
+-2
+\end{pmatrix}
+=
+\begin{pmatrix}
+-1/2 \\
+-2\\
+-2
+\end{pmatrix}
+\bullet
+\begin{pmatrix}
+-1/2 \\
+-2\\
+-2
+\end{pmatrix}
++ (-1)(-1) + (-1)(-1) + (-1)(-1) + 3
+\end{equation*}
+\begin{equation*}
+\begin{pmatrix}
+-5/2\\
+-2\\
+-2
+\end{pmatrix}
+\bullet
+\begin{pmatrix}
+-5/2\\
+-2\\
+-2
+\end{pmatrix}
+= (-1/2)(-1/2) + (-2)(-2) + (-2)(-2) + 6
+\end{equation*}
+\begin{align*}
+(-\frac{5}{2})(-\frac{5}{2}) + (-2)(-2) + (-2)(-2) &= \frac{57}{4} \\
+\frac{25}{4} + 4 + 4 &= \frac{57}{4} \\
+\frac{57}{4} &= \frac{57}{4}
+\end{align*}
+Thus we have proved the hypothesis, however note that the conclusion does not hold as:
+\begin{equation*}
+u \bullet v =
+\begin{pmatrix}
+-1/2\\
+-2\\
+-2
+\end{pmatrix}
+\bullet
+\begin{pmatrix}
+-1\\
+-1\\
+-1
+\end{pmatrix}
+\end{equation*}
+\begin{align*}
+u \bullet v &= (-\frac{1}{2})(-1) + (-2)(-1) + (-2)(-1) \\
+u \bullet v &= \frac{1}{2} + 2 + 2 \\
+u \bullet v &= \frac{9}{2} 
+\end{align*}
+Because $(u \bullet v) \neq 0$, this shows that the counter examples disproves the origional statement.
 \end{document} 
