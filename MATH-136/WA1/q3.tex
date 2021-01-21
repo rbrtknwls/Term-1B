@@ -1,0 +1,47 @@
+\documentclass[11pt]{article}
+\textwidth 15cm 
+\textheight 21.3cm
+\evensidemargin 6mm
+\oddsidemargin 6mm
+\topmargin -1.1cm
+\setlength{\parskip}{1.5ex}
+
+
+\usepackage{amsfonts,amsmath,amssymb,enumerate}
+
+
+
+\begin{document}
+\textbf{Question 3} [8 marks] \\\\
+\textbf{a)} let $x_1, x_2, x_3 \in \mathbb{C}^n$, thus by Lemma 1(i) we know that:
+\begin{align*}
+\langle x_1, x_2 + x_3  \rangle &= \langle \overline{x_2 + x_3, + x_1}  \rangle
+\end{align*}
+By Lemme 1(ii) this will thus become:
+\begin{align*}
+\langle \overline{x_2 + x_3, + x_1}  \rangle &= \langle \overline{x_2, x_1}  \rangle + \langle \overline{x_3,  x_1}  \rangle
+\end{align*}
+By using Lemma 1(i) again (reversing the original conjugate) this equation will thus become:
+\begin{align*}
+\langle \overline{x_2, x_1}  \rangle + \langle \overline{x_3, x_1}  \rangle &= \langle x_1, x_2  \rangle + \langle \overline{x_3,  x_1}  \rangle \\
+&= \langle x_1, x_2  \rangle + \langle x_1, x_3  \rangle
+\end{align*}
+Thus proving the original equation, using only the first Lemma(i-ii).\\\\
+\textbf{b)} let $x_1, x_2, c \in \mathbb{C}^n$, thus by Lemma 1(i) we know that:
+\begin{align*}
+\langle x_1, cx_2  \rangle &= \langle \overline{cx_2, x_1}  \rangle
+\end{align*}
+By Lemme 1(iii) this will thus become:
+\begin{align*}
+\langle \overline{cx_2, x_1}  \rangle &= \overline{c} \langle \overline{x_2, x_1}  \rangle
+\end{align*}
+By using Lemma 1(i) again (reversing the original conjugate) this equation will thus become:
+\begin{align*}
+\overline{c} \langle \overline{x_2, x_1}  \rangle &= \overline{c} x_1, x_2 \rangle
+\end{align*}
+Thus proving the original equation, using only the first Lemma(i and iii).\\\\
+\textbf{c)} let $x_1, x_2, x_3 c \in \mathbb{C}^n$"
+\begin{align*}
+\langle x_1, c(x_2 +x_3)  \rangle &= \overline{c} \langle x_1, x_2  \rangle +  \overline{c} \langle x_1, x_3  \rangle
+\end{align*}
+\end{document} 
