@@ -1,0 +1,95 @@
+\documentclass[11pt]{article}
+\textwidth 15cm 
+\textheight 21.3cm
+\evensidemargin 6mm
+\oddsidemargin 6mm
+\topmargin -1.1cm
+\setlength{\parskip}{1.5ex}
+
+
+\usepackage{amsfonts,amsmath,amssymb,enumerate}
+
+
+
+\begin{document}
+\textbf{Question 2} [15 marks] \\\\
+\textbf{a)} We know from the hint that 0 = (0)(0), thus our equation becomes:
+\begin{align*}
+G(0) &= G((0)(0))
+\end{align*}
+We also know that G is a linear function, so by the second property the equation becomes:
+\begin{align*}
+G(0) &= G((0)(0))\\
+       &= (0)G((0))\\
+       &= 0
+\end{align*}
+Thus proving that if G is a linear function the G(0) = 0.\\\\
+\textbf{b)} To prove this is false we will use proof by contadiction. To start we will assume that sin(x) is linear, that is to say that the first property will hold:
+\[ \forall x_{1}, x_{2} \in \mathbb{R},\text{ } \sin(x_1 + x_2) = \sin(x_1) + \sin(x_2) \]
+If we consider $x_{1} = \frac{\pi}{2}$ and $x_{2} = \frac{\pi}{2}$ and apply this to the first property we find that:
+\begin{align*}
+\sin(x_1 + x_2) &= \sin(x_1) + \sin(x_2)\\
+\sin(\frac{\pi}{2} + \frac{\pi}{2}) &= \sin(\frac{\pi}{2}) + \sin(\frac{\pi}{2})\\
+ \sin(\pi) &= \sin(\frac{\pi}{2}) + \sin(\frac{\pi}{2}) \\
+0 &= 1 + 1
+\end{align*}
+However this is a clear contradiction as $0 \neq 2$, thus showing that since the first property does not hold sin(x) is not a linear function.\\\\
+\textbf{c)} To prove this is false we will use proof by contadiction. To start we will assume that 2x + 3 is linear, that is to say that the first property will hold:
+\[ \forall x_{1}, x_{2} \in \mathbb{R},\text{ } 2(x_1 + x_2) + 3 = 2(x_1) + 3 + 2(x_2)+3 \]
+If we consider $x_{1} = 3$ and $x_{2} = 1$, then by the first property the equation will become:
+\begin{align*}
+2(x_1 + x_2) + 3 &= 2(x_1) + 3 + 2(x_2) + 3\\
+2(3 + 1) + 3 &= 2(3) + 3 + 2(1) + 3\\
+2(4) + 3 &= 6 +  2 + 6\\
+8 + 3 &= 14\\
+11 &= 14
+\end{align*}
+However this is a clear contradiction as $11 \neq 14$, thus showing that since the first property does not hold 2x + 3 is not a linear function.\\\\
+\textbf{d)} To prove that f(x) = 2x is linear, we will prove that the two properties hold for any $x$. Starting with the first property let $\forall x_{1}, x_{2} \in \mathbb{R}$, such that:
+\begin{align*}
+f(x_1 + x_2)  &= f(x_1) + f(x_2)\\
+2(x_1 + x_2) &= 2(x_1) + 2(x_2)\\
+2(x_1) + 2(x_2) &= 2(x_1) + 2(x_2)
+\end{align*}
+Thus showing that the first property holds for any $x_1$ and $x_2$. To check for the second property let $x_3, c \in \mathbb{R}$, such that:
+\begin{align*}
+f(c*x_3)  &= c*f(x_3)\\
+2(c*x_3)  &= c*2(x_3)\\
+c(2*x_3)  &= c(2*x_3)
+\end{align*}
+Since both properties holds for any $x_1, x_2, x_3, c \in \mathbb{R}$, f(x) = 2x is proven to be linear.\\\\
+\textbf{E)} To start we will use the hypothesis to prove that F(0) = 0, assuming the hypothesis we know that:
+\[ \forall y_1,y_2 \text{ and }d \in \mathbb{R}, F(dy_1 + y_2) = dF(y_1) + F(y_2) \]
+To prove the first hypothesis we let d = 1, therefore we get that for every $y_1, y_2 \in \mathbb{R}$:
+\begin{align*}
+F(dy_1 + y_2) &= dF(y_1) + F(y_2)\\
+F((1)y_1 + y_2) &= (1)F(y_1) + F(y_2)\\
+F(y_1 + y_2) &= F(y_1) + F(y_2)
+\end{align*}
+Thus showing that the first property holds in F for any $y_1$ and $y_2$. To check for the second property let $y_2 = 0$ such that for every $y_1, d \in \mathbb{R}$, such that:
+\begin{align*}
+F(dy_1 + y_2) &= dF(y_1) + F(y_2)\\
+F(dy_1 + 0) &= dF(y_1) + F(0)\\
+F(dy_1) &= dF(y_1) + F(0)
+\end{align*}
+Note that since we have proven the first hypothesis, we can use it to expand the $F(dy_1)$, we thus get $y_1$ repeated d times:
+\begin{align*}
+F(y_1 + y_1 + \cdots + y_1) &= dF(y_1) + F(0)\\
+F(y_1) + F(y_1) + \cdots + F(y_1) &= dF(y_1) + F(0)\\
+dF(y_1) &= dF(y_1) + F(0)\\
+F(0) &= 0
+\end{align*}
+If we plug this onto our previous equation for property 2 we get that:
+\begin{align*}
+F(dy_1) &= dF(y_1) + F(0)\\
+F(dy_1) &= dF(y_1) + 0\\
+dF(y_1) &= dF(y_1)
+\end{align*}
+Thus proving the second property for any $y_1 \text{and} d \in \mathbb{R}$. Since both properties hold, we have shown that F is linear, that is to say that:
+\begin{align*}
+F(0) &= F((0)(0))\\
+       &= (0)F(0))\\
+       &= (0)
+\end{align*}
+\\\\
+\end{document} 
